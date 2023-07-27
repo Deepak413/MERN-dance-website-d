@@ -1,0 +1,133 @@
+#coach_landing_page {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.coach_page_container{
+    color: white;
+    width: 49%;
+    height: 18rem;
+    padding: 2rem 4rem;
+    margin: auto;
+    text-align: center;
+}
+
+.coach_page_container h5{
+    font-weight: bold;
+    font-size: larger;
+    font-family: monospace;
+    margin-bottom: 1rem;
+}
+.coach_page_container h3{
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: fantasy;
+    letter-spacing: 5px;
+}
+.coach_page_container button{
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 1.7rem;
+    font-family: monospace;
+    border-radius: 12px;
+    padding: 7px 14px;
+    border: 1px solid black;
+    background-color: rgb(255, 185, 79);
+}
+.coach_page_container button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+
+/* COACH BOX CSS */
+.coach_container{
+    padding: 5rem 7rem;
+    background-color: whitesmoke;
+}
+.coach_container h1{
+    text-transform: uppercase;
+    font-family: 'Lilita One';
+    color: orange;
+    text-align: center;
+    margin-bottom: 4rem;
+    letter-spacing: 2px;
+}
+.coach_box_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.coach_box{
+    text-align: center;
+}
+.coach_box:hover{
+    transition: transform 0.6s;
+    transform: scale(1.1);
+    border: 2px solid black;
+    overflow: visible;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+.coach_box img{
+    width: 100%;
+    height: 70%;
+}
+.coach_heading{
+    font-family: math;
+    margin-bottom: 0;
+    margin-top: 1.2rem;
+}
+
+
+
+/* CSS rules for tablet screens */
+@media (max-width: 850px) {
+    .coach_page_container h3 {
+        font-size: 2rem;
+    }
+    .coach_container {
+        padding: 3.5rem 3.5rem;
+    }
+    .coach_heading {
+        margin-top: 0.8rem;
+    }
+    .coach_box p{
+        margin-bottom: 40px;
+    }
+}
+
+
+
+/* CSS rules for tablet screens */
+@media (max-width: 450px) {
+    #coach_landing_page{
+        height: 50vh;
+        background-position: inherit;
+    }
+    .coach_page_container{
+        width: 100%;
+    }
+    .coach_page_container h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: 3px;
+    }
+    .coach_container h1 {
+        margin-bottom: 3rem;
+    }
+    .coach_box_container{
+        display: flex;
+        flex-direction: column;
+    }
+}

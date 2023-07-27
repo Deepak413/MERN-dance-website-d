@@ -1,0 +1,126 @@
+.signup {
+    padding: 6rem 8rem;
+}
+
+.signup_content {
+    display: flex;
+    flex-direction: row;
+    background-color: #fbfbfb;
+    padding: 3rem 5rem;
+    border-radius: 1.4rem;
+
+}
+
+.signup_form {
+    width: 50%;
+}
+
+.signup_form h2 {
+    font-family: monospace;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.signup_image {
+    width: 50%;
+}
+
+.signup_image img {
+    width: 100%;
+    height: 100%;
+}
+.signup_image figure{
+    padding: 1rem 5rem;
+}
+
+.form-group {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1.5px solid #b8b5b5;
+}
+
+.form-group input {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    margin-left: 6px;
+}
+
+.form-button{
+    border: none;
+    margin-top: 3rem;
+}
+.form-button input{
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    background-color: rgb(255, 185, 79);
+    color: white;
+    border: none;
+}
+.form-button input:hover{
+    background-color: white;
+    color: rgb(255, 185, 79);
+    border: 1px solid black;
+}
+
+.signup_image_link{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    margin: auto;
+    margin-top: 21px;
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+.signup_image_link:hover{
+    color: rgb(255, 185, 79);
+    border-bottom: 1px solid rgb(255, 185, 79);
+}
+
+
+
+
+/* CSS rules for tablet screens */
+@media (max-width: 850px) {
+    .signup {
+        padding: 6rem 5rem;
+    }
+
+    .signup_image {
+        display: none;
+    }
+    .signup_form{
+        width: 100%;
+    }
+    .signup_image_link{
+        border-bottom: none;
+        width: auto !important;
+    }
+}
+
+
+
+
+/* CSS rules for MOBILE PHONES screens */
+@media (max-width: 450px) {
+    .signup {
+        padding: 5rem 3rem;
+    }
+    .form_title{
+        font-size: 2.3rem !important;
+    }
+    .signup_content {
+        display: flex;
+        flex-direction: row;
+        background-color: #ebebeb;
+        padding: 3rem 2.5rem;
+    }
+}

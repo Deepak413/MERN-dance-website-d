@@ -1,0 +1,30 @@
+#notfound{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.not_found_404 h1{
+    font-size: 5rem;
+    font-family: fantasy;
+}
+.notfound h2{
+    font-weight: bold;
+    font-family: cursive;
+    margin-bottom: 3rem;
+}
+.notfound a{
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px 31px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    font-family: ui-sans-serif;
+}
+.notfound a:hover{
+    background-color: rgb(255, 221, 157);
+}

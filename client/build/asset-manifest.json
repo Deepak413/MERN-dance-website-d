@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ccc914d9.css",
+    "main.js": "/static/js/main.2db8ee83.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/gallary3.jpg": "/static/media/gallary3.1e97b2beca70306cb5ea.jpg",
+    "static/media/coach6.jpg": "/static/media/coach6.d23664c70ba8ad852d52.jpg",
+    "static/media/coach2.jpg": "/static/media/coach2.2774831cf3c416e0c560.jpg",
+    "static/media/gallary7.jpg": "/static/media/gallary7.9e6eff2e8a2cf40a17e3.jpg",
+    "static/media/gallary1.jpg": "/static/media/gallary1.fc5d4c3069cbcf1e649a.jpg",
+    "static/media/coach3.jpg": "/static/media/coach3.989ec4da25fd92823f37.jpg",
+    "static/media/gallary8.jpg": "/static/media/gallary8.e073a7c1324e4e8cdb67.jpg",
+    "static/media/pricingHome.jpg": "/static/media/pricingHome.e073a7c1324e4e8cdb67.jpg",
+    "static/media/gallary4.jpg": "/static/media/gallary4.bdbc281276ea7a1cdb5a.jpg",
+    "static/media/gallary2.jpg": "/static/media/gallary2.325f015ad5b772ad620c.jpg",
+    "static/media/coach5.jpg": "/static/media/coach5.9444e2161a67a6d1f98e.jpg",
+    "static/media/gallary6.jpg": "/static/media/gallary6.e9b480580d178c1d2ddd.jpg",
+    "static/media/coach4.jpg": "/static/media/coach4.704a24c49a24bb2fd9d0.jpg",
+    "static/media/home.jpg": "/static/media/home.d27b1d26dc8613777c26.jpg",
+    "static/media/instructorHome.jpg": "/static/media/instructorHome.c34414fd422205367a91.jpg",
+    "static/media/coach1.jpg": "/static/media/coach1.7ff29c31faed78efd00a.jpg",
+    "static/media/loginPic.png": "/static/media/loginPic.b5452b1659b3d239c4f4.png",
+    "static/media/gallary5.jpg": "/static/media/gallary5.ac875a4d5df5380c5b18.jpg",
+    "static/media/homebg.jpg": "/static/media/homebg.5ca697959fed2eb192e6.jpg",
+    "static/media/aboutme.jpg": "/static/media/aboutme.57caf179d65bb75fefd7.jpg",
+    "static/media/signupPic.png": "/static/media/signupPic.994e3bbfa8419e40939e.png",
+    "static/media/logo2.png": "/static/media/logo2.35b5e78f36bfda27a2c2.png",
+    "index.html": "/index.html",
+    "main.ccc914d9.css.map": "/static/css/main.ccc914d9.css.map",
+    "main.2db8ee83.js.map": "/static/js/main.2db8ee83.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccc914d9.css",
+    "static/js/main.2db8ee83.js"
+  ]
+}

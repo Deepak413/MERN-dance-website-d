@@ -1,0 +1,308 @@
+/* FOOTER CSS */
+.footer {
+    width: 100%;
+    background-color: rgb(229, 229, 229);
+}
+
+.footer_container {
+    padding: 5rem;
+    display: flex;
+}
+
+.footer_container_left {
+    /* border: 1px solid red; */
+    width: 35%;
+    padding: 25px 55px;
+}
+
+
+.footer_container_left>a {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(255, 185, 79);
+    font-family: 'Lilita One', cursive;
+}
+
+.footer_container_left>p {
+    padding-top: 20px;
+    font-family: system-ui;
+    text-align: justify;
+}
+
+
+.footer_container_right {
+    width: 65%;
+    padding: 39px 55px;
+    /* border: 1px solid red; */
+}
+
+.footer_mail_container {
+    margin-bottom: 35px;
+}
+
+.footer_mail_container h5 {
+    color: rgb(255, 185, 79);
+    ;
+    margin-bottom: 22px;
+    font-family: fantasy;
+    letter-spacing: 3px;
+    font-size: 23px;
+}
+
+.footer_mail_container input {
+    padding: 10px;
+    font-size: 17px;
+    width: 70%;
+    border-radius: 7px;
+    border: 1px solid #cecece;
+    margin-right: 20px;
+}
+
+.footer_mail_container button {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 11px 20px;
+    background-color: rgb(255, 185, 79);
+}
+
+.footer_mail_container button:hover {
+    background-color: rgb(255, 241, 221);
+    transition: 0.5s;
+}
+
+
+.footer_info_container {
+    display: flex;
+    /* border: 1px solid yellow; */
+    width: 100%;
+}
+
+.footer_address_detail {
+    width: 45%;
+}
+
+.footer_address_detail h5 {
+    color: rgb(255, 185, 79);
+    font-family: math;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.footer_address_card {
+    display: flex;
+    margin-bottom: 6px;
+    align-items: center;
+}
+
+.footer_address_cardicon {
+    font-size: 1.5rem;
+    margin-right: 13px;
+}
+
+.footer_social_card {
+    width: 43%;
+}
+
+.footer_social_card h5 {
+    color: rgb(255, 185, 79);
+    font-family: math;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.footer_social_cardlinks {
+    display: flex;
+
+}
+
+.footer_social_cardlink {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 18px;
+}
+
+.fb_icon {
+    color: white;
+    background-color: rgb(50, 50, 87);
+}
+
+.twitter_icon {
+    color: white;
+    background-color: rgb(109 212 200);
+}
+
+.insta_icon {
+    color: white;
+    background-color: red;
+}
+
+.linkedin_icon {
+    color: white;
+    background-color: #6e6eff;
+}
+
+.insta_icon:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(234, 234, 234);
+    border: 1px solid black;
+}
+
+.linkedin_icon:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(234, 234, 234);
+    border: 1px solid black;
+}
+
+
+.footer_line {
+    width: 100%;
+    background-color: rgb(255, 185, 79);
+    ;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+/* CSS FOR TABLET */
+@media (max-width: 850px) {
+    .footer_container {
+        padding: 3rem 1rem;
+    }
+
+    .footer_container_left {
+        width: 41%;
+        padding: 25px 31px;
+    }
+
+    .footer_container_right {
+        width: 59%;
+        padding: 35px 13px;
+    }
+
+    .footer_container_left>a {
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+
+    .footer_container_left>p {
+        padding-top: 20px;
+        width: 84%;
+        font-family: system-ui;
+        display: flex;
+        text-align: justify;
+    }
+
+    .footer_mail_container input {
+        padding: 7px 10px;
+        width: 70%;
+    }
+
+    .footer_mail_container button {
+        font-size: 14px;
+        margin-top: 16px;
+        padding: 8px 20px;
+    }
+
+    .footer_address_detail {
+        margin-right: 14px;
+    }
+
+    .footer_social_card p {
+        width: 75%;
+    }
+
+    .footer_social_cardlink {
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 13px;
+    }
+}
+
+
+
+
+/* CSS FOR MOBILE PHONES */
+@media (max-width: 450px) {
+    .footer_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_container_left {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .footer_container_right {
+        width: 100%;
+        padding: 18px 26px;
+    }
+
+    .footer_container_left>a {
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+
+    .footer_container_left>p {
+        width: 92%;
+    }
+
+    .footer_mail_container {
+        margin-bottom: 45px;
+    }
+
+    .footer_mail_container h5 {
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+        font-size: 21px;
+    }
+
+    .footer_mail_container input {
+        padding: 5px 13px;
+        width: 91%;
+    }
+
+    .footer_mail_container button {
+        font-size: 12px;
+        margin-top: 11px;
+        padding: 6px 14px;
+    }
+
+    /* .footer_social_card h5 {
+        font-size: 19px;
+    } */
+
+    .footer_social_card p {
+        width: 75%;
+    }
+
+    .footer_social_cardlinks {
+        width: 84%;
+    }
+
+    .footer_social_cardlink {
+        font-size: 13px;
+        padding: 13px;
+        margin-right: 10px;
+    }
+    .footer_line{
+        padding: 9px 10px;
+        font-size: 12px;
+    }
+}
