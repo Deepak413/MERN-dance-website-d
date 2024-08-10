@@ -75,7 +75,7 @@ const Contact = () => {
             <span><i className="zmdi zmdi-smartphone-android"></i></span>
             <div className="contact_info_content">
               <div className="contact_info_title">Phone</div>
-              <div className="contact_info_text">+9199283*****</div>
+              <div className="contact_info_text">+919928300000</div>
             </div>
           </div>
           <div className="contact_info_item">
