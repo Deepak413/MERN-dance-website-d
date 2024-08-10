@@ -31,7 +31,6 @@ nav>a {
 
 .nav_container a:hover {
     color: white !important;
-    text-decoration: underline;
     transition: 0.4s;
 }
 

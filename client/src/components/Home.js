@@ -1,13 +1,14 @@
 import React from 'react';
-import homeimg from '../images/home.jpg';
+// import homeimg from '../images/home.jpg';
 import '../components/Home.css';
 import Gallary from './Gallary';
 import homelesson from '../images/homebg.jpg';
 
 const Home = () => {
+  const backgroundImageUrl = "https://res.cloudinary.com/dcdu1cisn/image/upload/v1723326004/dance%20website%20pics/home_igqop5.jpg";
   return (
     <>
-      <section id="home_landing_page" style={{backgroundImage: `url(${homeimg})`}}>
+      <section id="home_landing_page" style={{backgroundImage: `url(${backgroundImageUrl})`}}>
         <div className="home_page_container">
           <h5>Explore the Dance Lifestyle And Learn More About Our Community</h5>
           <h1>JUST DANCE ACADEMY</h1>
