@@ -3,9 +3,6 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require("jsonwebtoken");
 const authenticate = require("../middleware/authenticate");
-const cors = require('cors');
-
-app.use(cors());
 require('../db/conn');
 const User = require("../modal/userSchema");  //collection data
 
