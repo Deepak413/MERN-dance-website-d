@@ -9,6 +9,7 @@ const Authenticate = async (req, res, next ) => {
     try{
 
         const token = req.cookies.jwttoken;
+        console.log("req in authenticate", req);
         console.log("token in authentcate middleware -- token : "+token);
         const verifyToken = jwt.verify(token, process.env.SECRET_KEY);
         console.log("verify token : " + verifyToken);
