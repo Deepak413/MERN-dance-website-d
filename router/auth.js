@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 const authenticate = require("../middleware/authenticate");
 
 
-require('../../db/conn');
+require('../db/conn');
 const User = require("../modal/userSchema");  //collection data
 
 //USING ASYNC-AWAIT
