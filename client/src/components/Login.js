@@ -18,7 +18,7 @@ const Login = () => {
   const loginUser = async(e) => {
     e.preventDefault();
 
-    const res = await fetch('/signin', {
+    const res = await fetch('https://justdance.onrender.com/signin', {
       method: "POST",
       headers: {
         "Content-type" : "application/json"
@@ -43,8 +43,6 @@ const Login = () => {
       console.log("Login Successful");
       navigate("/");
     }
-
-
   }
 
   return (

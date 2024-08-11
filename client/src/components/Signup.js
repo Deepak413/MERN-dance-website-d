@@ -3,6 +3,7 @@ import './Signup.css';
 import signupPic from '../images/signupPic.png';
 import { NavLink} from 'react-router-dom';
 
+
 const Signup = () => {
 
   // const history = useHistory();
@@ -30,7 +31,7 @@ const Signup = () => {
 
     const { name, email, phone, age, password, cpassword } = user;
 
-    const res = await fetch("/register", {
+    const res = await fetch("https://justdance.onrender.com/register", {
       method: "POST",
       headers: {
         "content-type" : "application/json"

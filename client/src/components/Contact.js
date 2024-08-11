@@ -7,7 +7,7 @@ const Contact = () => {
 
   const userContact = async () => {
     try {
-      const res = await fetch('/getdata', {
+      const res = await fetch('https://justdance.onrender.com/getdata', {
         method:"GET",
         headers: {
           "Content-Type": "application/json"
@@ -46,7 +46,7 @@ const Contact = () => {
     e.preventDefault();
     const { name, email, phone, message } = userData;
 
-    const res = await fetch('/contact', {
+    const res = await fetch('https://justdance.onrender.com/contact', {
       method:"POST",
       headers:{
         "Content-Type": "application/json"
