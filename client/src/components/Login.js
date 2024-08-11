@@ -27,15 +27,21 @@ const Login = () => {
         email, password
       })
     })
-    console.log("res : ", res);
-    if (!res.ok) {
-      throw new Error(`HTTP error! status: ${res.status}`);
+    console.log("res in login : ", res);
+    // if (!res.ok) {
+    //   throw new Error(`HTTP error! status: ${res.status}`);
+    // }
+    try {
+      var data = await res.json();
+    } catch (err) {
+      console.error("err while converting to json", err);
     }
+    console.log("data in about",data);
 
-    const data = await res.json();
+    // const data = await res.json();
     if(res.status === 400 || !data){
-      window.alert("Invalid credentials");      //this not showing but data successfully storeed 
-      console.log("Invalid credentials");
+      window.alert("Invalid credentials in frontend");      //this not showing but data successfully storeed 
+      console.log("Invalid credentials in fe");
     } 
     else {
       dispatch({type:"USER", payload:true})

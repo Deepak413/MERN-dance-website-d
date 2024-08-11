@@ -3,16 +3,21 @@ const dotenv = require("dotenv");
 const express = require("express");
 const app = express();
 const cookieParser = require('cookie-parser');
-const cors = require("cors");
+// const cors = require("cors");
 
-const corsOptions = {
-    origin: 'https://justdancef.onrender.com',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true, // Allow cookies and credentials
-    optionsSuccessStatus: 204
-};
+// const corsOptions = {
+//     origin: '*',
+//     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+//     credentials: true, // Allow cookies and credentials
+//     optionsSuccessStatus: 204
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
+const cors = require('cors');
+app.use(cors({
+  origin: 'https://justdancef.onrender.com', // The frontend URL
+  credentials: true
+}));
 
 
 //CONNECT TO MONGODB ATLAS

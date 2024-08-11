@@ -3,18 +3,19 @@ import './Contact.css';
 
 const Contact = () => {
 
-  const [userData, setUserData] = useState({name:"", email:"", phone:"", message:""});  //to set the data in profile
+  const [userData, setUserData] = useState({ name: "", email: "", phone: "", message: "" });  //to set the data in profile
 
   const userContact = async () => {
     try {
       const res = await fetch('https://justdance.onrender.com/getdata', {
-        method:"GET",
+        method: "GET",
         headers: {
           "Content-Type": "application/json"
         },
+        credentials: 'include',
       });
 
-      console.log("res in contact",res);
+      console.log("res in contact", res);
 
       // if (!res.ok) {
       //   throw new Error(`Request failed with status ${res.status}`);
@@ -25,8 +26,8 @@ const Contact = () => {
       } catch (err) {
         console.error("err while converting to json", err);
       }
-      console.log("data in contact",data);
-      setUserData({ ...userData, name:data.name, email:data.email, phone:data.phone });
+      console.log("data in contact", data);
+      setUserData({ ...userData, name: data.name, email: data.email, phone: data.phone });
 
 
     } catch (err) {
@@ -43,7 +44,7 @@ const Contact = () => {
     const name = e.target.name;
     const value = e.target.value;
 
-    setUserData({ ...userData, [name]:value });
+    setUserData({ ...userData, [name]: value });
   }
 
   //sending the data to backend
@@ -52,8 +53,8 @@ const Contact = () => {
     const { name, email, phone, message } = userData;
 
     const res = await fetch('https://justdance.onrender.com/contact', {
-      method:"POST",
-      headers:{
+      method: "POST",
+      headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({ name, email, phone, message })
@@ -62,12 +63,12 @@ const Contact = () => {
     const data = await res.json();
     console.log(data);
 
-    if(!res.ok){
+    if (!res.ok) {
       console.log("message not sent");
     } else {
       console.log("message sent");
       window.alert("message sent");
-      setUserData({ ...userData, message:"" });
+      setUserData({ ...userData, message: "" });
     }
 
   }
@@ -108,39 +109,39 @@ const Contact = () => {
           <div className="contact_form_container">
             <h2 className='contact_form_title'>Get in Touch</h2>
             <form method='POST' id='contact_form'>
-              
+
               <div className='contact_form_name'>
-                <input type="text" name='name' 
-                  id="contact_form_name" 
-                  className='contact_form_name contact_input_field' 
+                <input type="text" name='name'
+                  id="contact_form_name"
+                  className='contact_form_name contact_input_field'
                   placeholder='Enter Name'
                   onChange={handleInputs} value={userData.name} />
 
-                <input type="email" name='email' 
-                  id="contact_form_email" 
-                  className='contact_form_email contact_input_field' 
+                <input type="email" name='email'
+                  id="contact_form_email"
+                  className='contact_form_email contact_input_field'
                   placeholder='Enter Email'
-                  onChange={handleInputs} 
+                  onChange={handleInputs}
                   value={userData.email} />
 
-                <input type="number" name='phone' 
-                  id="contact_form_phone" 
-                  className='contact_form_phone contact_input_field' 
+                <input type="number" name='phone'
+                  id="contact_form_phone"
+                  className='contact_form_phone contact_input_field'
                   placeholder='Enter Phone'
-                  onChange={handleInputs} 
+                  onChange={handleInputs}
                   value={userData.phone} />
 
               </div>
-              
+
               <div className="contact_form_textarea mt-4">
-                <textarea name='message' 
-                  className='textarea_field contact_form_message' 
-                  onChange={handleInputs} value={userData.message} 
+                <textarea name='message'
+                  className='textarea_field contact_form_message'
+                  onChange={handleInputs} value={userData.message}
                   placeholder='Wanna join us...type here' id=""></textarea>
               </div>
 
               <div className="contact_form_button">
-                <button type='submit' 
+                <button type='submit'
                   className='button contact_submit_button'
                   onClick={sendContactFormData}>Send Message</button>
               </div>

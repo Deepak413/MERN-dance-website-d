@@ -49,8 +49,9 @@ router.post('/register', async (req, res) => {
 //for login we generated a token and stored that in cookie
 
 router.post('/signin', async (req, res) => {
-    // console.log(req.body);
+    console.log("hello world in signin");
     // res.json({ message:"awesome" });
+
 
     try {
         let token;
@@ -68,7 +69,7 @@ router.post('/signin', async (req, res) => {
 
             //generating JWT token..after password match we stored cookie
             token = await userLogin.generateAuthToken();
-            console.log(token);
+            console.log("token", token);
             res.cookie("jwttoken", token, {
                 expires: new Date(Date.now() + 2589000000),
                 httpOnly: true
@@ -79,7 +80,7 @@ router.post('/signin', async (req, res) => {
             else
                 res.status(200).json({ message: "User logged in successfully" });
         } else {
-            res.status(400).json({ error: "Invalid credentials" });
+            res.status(400).json({ error: "Invalid credentials in backend" });
         }
 
     } catch (err) {
@@ -90,7 +91,7 @@ router.post('/signin', async (req, res) => {
 
 //ABOUT ME PAGE ...we are  using 'authenticate' middleware to verify the user by using jwttokens
 router.get('/about', authenticate, (req, res) => {
-    // console.log("Hello my about page")
+    console.log("Hello my about page")
     res.send(req.rootUser);
 });
 

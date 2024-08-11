@@ -7,9 +7,11 @@ const User = require("../modal/userSchema");
 
 const Authenticate = async (req, res, next ) => {
     try{
-
-        const token = req.cookies.jwttoken;
         console.log("req in authenticate", req);
+        const keys = Object.keys(req.cookies);
+        console.log("keys in authenticate", keys);
+        const token = req.cookies.jwttoken;
+        
         console.log("token in authentcate middleware -- token : "+token);
         const verifyToken = jwt.verify(token, process.env.SECRET_KEY);
         console.log("verify token : " + verifyToken);
