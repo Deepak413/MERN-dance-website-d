@@ -23,6 +23,7 @@ const Login = () => {
       headers: {
         "Content-type" : "application/json"
       },
+      credentials: "include",
       body: JSON.stringify({        //bcz server doesnt understand JSON data
         email, password
       })
