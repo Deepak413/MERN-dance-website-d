@@ -39,6 +39,10 @@ const Signup = () => {
         name, email, phone, age, password, cpassword
       })
     });
+
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status}`);
+    }
     
     const data = await res.json();
     if(res.status === 422|| !data){

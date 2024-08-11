@@ -27,6 +27,10 @@ const Login = () => {
         email, password
       })
     })
+    console.log("res : ", res);
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status}`);
+    }
 
     const data = await res.json();
     if(res.status === 400 || !data){

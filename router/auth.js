@@ -5,13 +5,16 @@ const jwt = require("jsonwebtoken");
 const authenticate = require("../middleware/authenticate");
 
 
-require('../db/conn');
+require('../../db/conn');
 const User = require("../modal/userSchema");  //collection data
 
 //USING ASYNC-AWAIT
 router.post('/register', async (req, res) => {
 
     const { name, email, phone, age, password, cpassword } = req.body;     //object destructuring
+    console.log(name);
+    console.log(phone);
+    console.log(age);
 
     if (!name || !email || !phone || !password || !cpassword) {
         return res.status(422).json({ error: "please fill the required details" });
@@ -38,6 +41,7 @@ router.post('/register', async (req, res) => {
         }
 
     } catch (err) {
+        console.log("Registration failed");
         console.log(err);
     }
 
@@ -81,6 +85,7 @@ router.post('/signin', async (req, res) => {
         }
 
     } catch (err) {
+        console.log("login failed");
         console.log(err);
     }
 });

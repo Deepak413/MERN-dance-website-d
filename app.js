@@ -7,7 +7,7 @@ const cookieParser = require('cookie-parser');
 //CONNECT TO MONGODB ATLAS
 
 dotenv.config({ path: './config.env' });
-require('./db/conn');
+require('../db/conn');
 // const User = require('./modal/userSchema');
 
 //Use to convert the upcoming json data into object

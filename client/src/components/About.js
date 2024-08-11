@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import aboutme from '../images/aboutme.jpg';
+// import aboutme from '../images/aboutme.jpg';
 import './About.css';
 import {useNavigate} from 'react-router-dom';
 
 const About = () => {
+  const aboutmeurl = "https://res.cloudinary.com/dcdu1cisn/image/upload/v1723327863/dance%20website%20pics/aboutme_voqphb.jpg";
 
   const navigate = useNavigate();
   const [userData, setUserData] = useState({});  //to set the data in profile
@@ -45,7 +46,7 @@ const About = () => {
         <form method='GET'>
           <div className="row first_row">
             <div className="col-md-4 aboutme_img_container">
-              <img src={aboutme} alt="Employee" />
+              <img src={aboutmeurl} alt="Employee" />
             </div>
             <div className="col-md-6">
               <div className="profile_head">
