@@ -1,10 +1,13 @@
 import React, {useState } from 'react';
 import './Signup.css';
-import signupPic from '../images/signupPic.png';
+// import signupPic from '../images/signupPic.png';
 import { NavLink} from 'react-router-dom';
 
 
 const Signup = () => {
+
+  const signupPicurl = "https://res.cloudinary.com/dcdu1cisn/image/upload/v1723327984/dance%20website%20pics/signupPic_gkwo9w.png";
+
 
   // const history = useHistory();
 
@@ -133,7 +136,7 @@ const Signup = () => {
 
             <div className="signup_image">
               <figure>
-                <img src={signupPic} alt="Registration pic" />
+                <img src={signupPicurl} alt="Registration pic" />
               </figure>
             </div>
 

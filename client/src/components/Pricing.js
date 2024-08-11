@@ -1,11 +1,12 @@
 import React from 'react';
-import pricingHome from '../images/pricingHome.jpg';
+// import pricingHome from '../images/pricingHome.jpg';
 import '../components/Pricing.css';
 
 const Pricing = () => {
+  const backgroundImageUrl = "https://res.cloudinary.com/dcdu1cisn/image/upload/v1723327984/dance%20website%20pics/pricingHome_r0t9fq.jpg";
   return (
     <>
-      <section id="pricing_landing_page" style={{backgroundImage: `url(${pricingHome})`}}>
+      <section id="pricing_landing_page" style={{backgroundImage: `url(${backgroundImageUrl})`}}>
         <div className="pricing_page_container">
           <h5>Explore the Very Affordable Dance Classes Near You</h5>
           <h3>Check Out Prices</h3>

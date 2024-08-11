@@ -1,11 +1,13 @@
 import React, {useContext, useState} from 'react';
 import './Login.css';
-import loginPic from '../images/loginPic.png'
+// import loginPic from '../images/loginPic.png'
 import { NavLink, useNavigate } from 'react-router-dom';
 
 import { UserContext } from '../App';
 
 const Login = () => {
+
+  const loginPicurl = "https://res.cloudinary.com/dcdu1cisn/image/upload/v1723327921/dance%20website%20pics/loginPic_irsk96.png";
 
   // const { state, dispatch} = useContext(UserContext);
   const { dispatch} = useContext(UserContext);
@@ -59,7 +61,7 @@ const Login = () => {
           <div className="login_content">
             <div className="login_image">
               <figure>
-                <img src={loginPic} alt="Login pic" />
+                <img src={loginPicurl} alt="Login pic" />
               </figure>
             </div>
 

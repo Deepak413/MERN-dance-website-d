@@ -1,32 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.d7c6b140.css",
-    "main.js": "/static/js/main.833682e5.js",
+    "main.js": "/static/js/main.c93d75fe.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
-    "static/media/gallary3.jpg": "/static/media/gallary3.43d47c20df8754522eab.jpg",
-    "static/media/coach6.jpg": "/static/media/coach6.bb0eca0502304341e91d.jpg",
-    "static/media/coach3.jpg": "/static/media/coach3.55d4588f51137954eb0e.jpg",
-    "static/media/coach2.jpg": "/static/media/coach2.8cb54b2a2cc5d9d054e4.jpg",
-    "static/media/gallary7.jpg": "/static/media/gallary7.e5bcda40172b17078fa8.jpg",
-    "static/media/gallary4.jpg": "/static/media/gallary4.248b14f66d326e1978bf.jpg",
-    "static/media/gallary8.jpg": "/static/media/gallary8.41efd6af41dfd5102898.jpg",
-    "static/media/pricingHome.jpg": "/static/media/pricingHome.41efd6af41dfd5102898.jpg",
-    "static/media/coach4.jpg": "/static/media/coach4.44352ea867ae2698e3ee.jpg",
-    "static/media/coach5.jpg": "/static/media/coach5.d58c6b70daf0a4ba4288.jpg",
-    "static/media/gallary6.jpg": "/static/media/gallary6.60bab805c82bc54a3214.jpg",
-    "static/media/coach1.jpg": "/static/media/coach1.526fb2b9dc5fcb6d76cc.jpg",
-    "static/media/instructorHome.jpg": "/static/media/instructorHome.04c87c7d1d4b6483a075.jpg",
-    "static/media/gallary5.jpg": "/static/media/gallary5.3c88e0205b1b6520a2b5.jpg",
-    "static/media/loginPic.png": "/static/media/loginPic.bcdb5e39ad63ae12f991.png",
-    "static/media/signupPic.png": "/static/media/signupPic.327a8a22996dcb69fa02.png",
     "static/media/homebg.jpg": "/static/media/homebg.6f976686cce22e019d1b.jpg",
     "index.html": "/index.html",
     "main.d7c6b140.css.map": "/static/css/main.d7c6b140.css.map",
-    "main.833682e5.js.map": "/static/js/main.833682e5.js.map",
+    "main.c93d75fe.js.map": "/static/js/main.c93d75fe.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7c6b140.css",
-    "static/js/main.833682e5.js"
+    "static/js/main.c93d75fe.js"
   ]
 }
