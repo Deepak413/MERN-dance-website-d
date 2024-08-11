@@ -20,9 +20,9 @@ const About = () => {
         credentials:"include"           //to send cookies to backend also
       });
 
-      if (!res.ok) {
-        throw new Error(`Request failed with status ${res.status}`);
-      }
+      // if (!res.ok) {
+      //   throw new Error(`Request failed with status ${res.status}`);
+      // }
 
       const data = await res.json();
       console.log(data);
