@@ -13,6 +13,7 @@ const cookieParser = require('cookie-parser');
 // };
 
 // app.use(cors(corsOptions));
+const cors = require('cors');
 app.use(cors({
   origin: "https://justdancef.onrender.com", // The frontend URL
   credentials: true
