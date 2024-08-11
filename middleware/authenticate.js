@@ -3,8 +3,6 @@
 const jwt = require("jsonwebtoken");
 const User = require("../modal/userSchema");
 
-
-
 const Authenticate = async (req, res, next ) => {
     try{
         console.log("req in authenticate", req);
