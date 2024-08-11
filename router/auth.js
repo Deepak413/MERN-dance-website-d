@@ -72,7 +72,9 @@ router.post('/signin', async (req, res) => {
             console.log("token", token);
             res.cookie("jwttoken", token, {
                 expires: new Date(Date.now() + 2589000000),
-                httpOnly: true
+                httpOnly: true,
+                secure: true, // Add this if your site is using HTTPS
+                sameSite: 'none' // Ensures cookies are sent with cross-site requests
             });
 
             if (!isMatch)
@@ -110,14 +112,14 @@ router.post('/contact', authenticate, async (req, res) => {
             return res.status(422).json({ error: "please fill the contact form" });
         }
 
-        const userContact = await User.findOne({ _id:req.userID });    //userID coming from middleware
+        const userContact = await User.findOne({ _id: req.userID });    //userID coming from middleware
 
         if (userContact) {
-            const userMessage = await userContact.addMessage( name, email, phone, message );
+            const userMessage = await userContact.addMessage(name, email, phone, message);
 
             await userContact.save();
 
-            res.status(201).json({message:"Message section added to database Successfully"})
+            res.status(201).json({ message: "Message section added to database Successfully" })
         }
 
     } catch (err) {
@@ -128,7 +130,7 @@ router.post('/contact', authenticate, async (req, res) => {
 //LOGOUT page
 router.get('/logout', authenticate, (req, res) => {
     console.log("Hello my logout page");
-    res.clearCookie("jwttoken", {path: '/' });
+    res.clearCookie("jwttoken", { path: '/' });
     console.log("user logged out");
     res.status(200).send("user logout");
 });
