@@ -14,18 +14,23 @@ const Contact = () => {
         },
       });
 
+      console.log("res in contact",res);
+
       // if (!res.ok) {
       //   throw new Error(`Request failed with status ${res.status}`);
       // }
 
-      const data = await res.json();
-      console.log(data);
+      try {
+        var data = await res.json();
+      } catch (err) {
+        console.error("err while converting to json", err);
+      }
+      console.log("data in contact",data);
       setUserData({ ...userData, name:data.name, email:data.email, phone:data.phone });
 
 
     } catch (err) {
-      console.log("userContact func gives error");
-      console.log(err);
+      console.error("userContact func gives error", err);
     }
   }
 

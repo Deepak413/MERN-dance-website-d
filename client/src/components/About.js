@@ -20,18 +20,23 @@ const About = () => {
         credentials:"include"           //to send cookies to backend also
       });
 
+      console.log("res in about",res);
+
       // if (!res.ok) {
       //   throw new Error(`Request failed with status ${res.status}`);
       // }
 
-      const data = await res.json();
-      console.log(data);
+      try {
+        var data = await res.json();
+      } catch (err) {
+        console.error("err while converting to json", err);
+      }
+      console.log("data in about",data);
       setUserData(data);
 
 
     } catch (err) {
-      console.log("callAboutPage func gives error");
-      console.log(err);
+      console.log("callAboutPage func gives error", err);
       navigate('/login');
     }
   }
