@@ -15,7 +15,7 @@ const cookieParser = require('cookie-parser');
 // app.use(cors(corsOptions));
 const cors = require('cors');
 app.use(cors({
-  origin: '*', // The frontend URL
+  origin: "https://justdancef.onrender.com", // The frontend URL
   credentials: true
 }));
 
